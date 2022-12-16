@@ -24,8 +24,8 @@ int main()
     // структура с адресом "на той стороне" (сервера)
     sockaddr_in * remoteAddr = new (sockaddr_in);
     remoteAddr->sin_family = AF_INET;     // интернет протокол IPv4
-    remoteAddr->sin_port = htons(7);  // port 7
-    remoteAddr->sin_addr.s_addr = inet_addr("172.16.40.1"); //  адрес 
+    remoteAddr->sin_port = htons(44214); 
+    remoteAddr->sin_addr.s_addr = inet_addr("127.0.0.1"); //  адрес 
     
     // буфер для передачи и приема данных
     char *buffer = new char[4096];
